@@ -1,0 +1,18 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Login as :</div>
+    <div class="panel-body">
+        <button type="submit" class="btn btn-default" ng-click="loginAsUser()">login as user</button>
+        <button type="submit" class="btn btn-default" ng-click="loginAsOperator()">login as operator</button>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Web Based Firebase Chat Application</div>
+    <div class="panel-body">
+        <p ng-repeat="m in messages">{{m.message}} - {{m.date | date : 'medium'}}</p>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Message here..." ng-model="messageText">
+        </div>
+        <button type="submit" class="btn btn-default" ng-click="send()">Send</button>
+    </div>
+</div>
